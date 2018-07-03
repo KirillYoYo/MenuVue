@@ -4,6 +4,8 @@
 	max-width: 1280px;
 	margin: 0 auto;
 
+	margin-bottom: 150px;
+
 	.menu-item {
 		flex-grow: 1;
 		font-size: 18px;
@@ -15,19 +17,29 @@
 
 		.hide-wp {
 			opacity: 0;
+			visibility: hidden;
 			position: absolute;
 			top: 100%;
 			width: 100%;
 			box-sizing: border-box;
 			left: 0;
 			transition: opacity 200ms ease-in;
+			z-index: 2;
+
+			&--right {
+				left: auto;
+				right: -100%;
+				top: 0;
+				z-index: 3;
+			}
 
 			&.active {
 				opacity: 1;
+				visibility: visible;
 				transition: opacity 200ms ease-out;
 			}
 
-			&__item {
+			&__item, .menu-item {
 				//background: #fff;
 				background-color: rgba(109,183,252,0.6);
 				background: linear-gradient(left, rgba(109,183,252, 0.4) 0%, rgba(22,94,171, 0.4) 100%);

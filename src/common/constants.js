@@ -5,11 +5,15 @@ export const menuJson = [
     items: [
       {
         id: 1,
-        name: 'item menu1'
+        name: 'item menu 1'
       },
       {
-        id: 1,
-        name: 'item menu2'
+        id: 2,
+        name: 'item menu 2'
+      },
+      {
+        id: 3,
+        name: 'item menu 3'
       },
     ]
   },
@@ -20,11 +24,7 @@ export const menuJson = [
     items: [
       {
         id: 1,
-        name: 'item menu1'
-      },
-      {
-        id: 1,
-        name: 'item menu2'
+        name: 'item menu 1'
       },
     ]
   },
@@ -34,15 +34,19 @@ export const menuJson = [
     items: [
       {
         id: 1,
-        name: 'item menu1'
+        name: 'item menu 1'
       },
       {
-        id: 1,
-        name: 'item menu2',
-        subMenus: [
+        id: 2,
+        name: 'item menu 2',
+        items: [
           {
             id: 1,
-            name: 'sub menu1'
+            name: 'sub menu 1 !!!'
+          },
+          {
+            id: 2,
+            name: 'sub menu 2 !!!'
           }
         ]
       },
@@ -54,11 +58,11 @@ export const menuJson = [
     items: [
       {
         id: 1,
-        name: 'item menu1'
+        name: 'item menu 1'
       },
       {
         id: 1,
-        name: 'item menu2'
+        name: 'item menu 2'
       },
     ]
   }
