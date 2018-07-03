@@ -16,6 +16,16 @@ module.exports = {
       // Your postcss plugins
     ]
   },
+  mergeConfig: {
+    module: {
+      loaders: [
+        {
+          test: /\.scss$/,
+          loaders: ["sass"]
+        }
+      ]
+    }
+  },
   presets: [
     require('poi-preset-bundle-report')(),
     require('poi-preset-offline')({

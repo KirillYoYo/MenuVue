@@ -29,6 +29,7 @@
 
 <!-- CSS libraries -->
 <style src="normalize.css/normalize.css"></style>
+<style lang="scss" src="../styles/app.scss"></style>
 
 <!-- Global CSS -->
 <style>

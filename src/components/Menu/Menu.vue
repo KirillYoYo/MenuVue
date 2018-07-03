@@ -18,3 +18,5 @@
     }
   }
 </script>
+
+<style lang="scss" src="../../styles/menu.scss"></style>
