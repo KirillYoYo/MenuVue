@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <div class="banner">
+      <Menu :menu="menuJson" />
       <img
         src="https://vuejs.org/images/logo.png"
         width="100"
@@ -13,8 +14,16 @@
 </template>
 
 <script>
+  import Menu from '@/components/Menu/Menu'
+  import {menuJson} from '@/common/constants'
   export default {
-    name: 'app'
+    name: 'app',
+    components: {
+      Menu
+    },
+    data: function () {
+      return {menuJson}
+    }
   }
 </script>
 
