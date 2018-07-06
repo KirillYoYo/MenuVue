@@ -1,10 +1,14 @@
 <template>
     <div id="main-menu">
         <MenuItem
+            v-if="menu"
             v-for="menuItem in menu"
             v-bind:key="menuItem.id"
             v-bind:menuItem="menuItem"
         />
+        <div class="nothing-menu" v-if="!menu || menu.length === 0">
+            Nothing menu...
+        </div>
     </div>
 </template>
 

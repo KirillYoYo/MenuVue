@@ -45,6 +45,8 @@
   }
 </style>
 
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
 <!-- Scoped component css -->
 <!-- It only affect current component -->
 <style scoped>
